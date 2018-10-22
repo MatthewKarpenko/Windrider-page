@@ -1,0 +1,687 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+body {
+	font-family 'Roboto',sans-serif;
+}
+.boldText {
+    font-weight: bold;
+}
+
+.colorOrange {
+    color: orange;
+}
+.colorBlue {
+    color: #4682B4;
+}
+
+.active {
+    display: block;
+} 
+
+.hidden {
+    display: none;
+}
+
+
+.mainPic {
+	text-align: center;
+	margin-bottom: 80px;
+}
+
+#mn.pic {
+	width:8%;
+}
+
+
+.menu-links:hover {
+    color: white;
+
+}
+
+.nav-wrapper {
+    background-color: #4682B4
+}
+
+
+.menu {
+    display: flex;
+
+    justify-content: center;
+    
+}
+
+.menu-element1 {
+    font-size: 1.7em;
+
+    margin-right: 24px;
+    margin-left: 60px;
+
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+#kite {
+	color: orange;
+}
+
+#kite:hover {
+	color: #A9A9A9
+}
+
+#wake {
+	color: #1E90FF;
+}
+
+#wake:hover {
+	color: #A9A9A9
+}
+
+a {
+    text-decoration: none;
+
+    color: #696969;
+}
+
+a:hover {
+	color: #A9A9A9;
+}
+
+#homepic {
+    display: flex;
+    overflow: hidden;
+    margin-top: 20px;
+    margin-bottom: 55px;
+    
+
+    justify-content: center;
+}
+
+#game-container {
+    width: 100%;
+    height: 96px;
+}
+
+.gamePic {
+    width: 152px;
+    margin-left: 20px;
+    padding-top: 34px;
+    margin-bottom: 92px;
+
+}
+
+
+
+.schoolText {
+    font-size: 25px;
+
+    display: flex;
+    flex-direction: row;
+
+    margin-bottom: 55px;
+
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    color: gray;
+
+    justify-content: center;
+}
+
+.text-element  {
+	text-align: center;
+}
+
+.letter {
+	color: #696969;
+}
+
+
+.text-element2 {
+    font-size: 1.5em;
+
+    margin-bottom: 80px;
+
+    text-align: center;
+    letter-spacing: 1px;
+
+    color: #696969;
+}
+
+.mainMap {
+	text-align: center;
+	width: 100%;
+}
+
+.picturelinks {
+    display: inline-block;
+
+    margin-bottom: 30px;
+
+    text-align: center;
+}
+
+.pictureLinks2 {
+    display: inline-block;
+
+    margin-bottom: 80px;
+
+    text-align: center;
+}
+
+.infoimg {
+	width:30%;
+}
+
+.following {
+    display: flex;
+
+    margin-top: 25px;
+    margin-bottom: 15px;
+
+    justify-content: center;
+}
+
+.following-element {
+    font-size: 1.8em;
+
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    color: #c0c0c0;
+}
+
+.following-element:hover  {
+	color:#C0C0C0;
+}
+
+#inst  {
+	color: #A9A9A9;
+}
+
+.socbot {
+    display: flex;
+
+    margin-top: 20px;
+    margin-bottom: 30px;
+
+    justify-content: center;
+}
+
+.link2:hover {
+	opacity: 0.5;
+}
+
+.link2  {
+	width: 30%;
+}
+
+.men2 {
+    font-size: 14px;
+
+    display: flex;
+
+    margin-top: 100px;
+    margin-bottom: 125px;
+
+    justify-content: center;
+}
+
+.men2 a {
+    margin: 10px;
+
+    text-decoration: none;
+
+    color: gray;
+}
+
+.men2 a:hover {
+	opacity: 0.6;
+}
+
+footer.page-footer {
+	background-color: #4682B4;
+}
+/*Page of Locations of Kite-schools*/
+/*main text on the page*/
+.locations {
+    font-size: 200%;
+
+    padding-top: 30px;
+
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    color: #808080;
+}
+
+.box-info {
+    font-size: 20px;
+
+    width: 342px;
+    height: 240px;
+    margin: auto;
+    margin-top: 30px;
+
+    text-align: center;
+
+    color: #696969;
+    border: 4px solid #b0e0e6;
+    background-image: url(../Images/wave.png);
+}
+
+.city {
+    font-size: 2em;
+
+    color: orange;
+}
+
+.schoolinfo {
+	padding-top:75px;
+}
+
+.colorinfo {
+	color: #1E90FF;
+}
+
+.nameInfo {
+    font-family: monospace ;
+
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.row {
+	margin: auto;
+}
+/*Particular pages of schools*/
+
+.MainInfo {
+    font-size: 2em;
+
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+    text-align: center;
+    letter-spacing: 1px;
+
+    color: #00aeaf;
+}
+
+
+.flex-map {
+    display: flex;
+
+    justify-content: center;
+}
+
+.map {
+    width: 90%;
+    height: 400px;
+}
+
+.locationInfo {
+    font-size: 1em;
+    letter-spacing: 1px;
+    color: #696969;
+}
+
+.kontakt-people {
+    display: flex;
+
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.kontakt-element {
+    width: 176px;
+    margin-top: 20px;
+    margin-right: 45px;
+    margin-left: 45px;
+    padding: 20px;
+
+    text-align: center;
+
+    border: 2px solid #d3d3d3;
+}
+
+.infoName {
+    font-size: 1.3em;
+
+    color: #808080;
+}
+
+.kontakts {
+    width: 500px;
+    margin: auto;
+}
+
+
+
+
+
+
+
+
+/*page of proriders*/
+
+.headerProrider {
+	font-size: 2.5em;
+}
+
+.proriders {
+	width: 70%;
+	margin-bottom: 100px;
+}
+
+
+
+/*kite-schools page*/
+.infoText {
+    margin-left: 30px;
+    margin-right: 30px;
+    width: 95%;
+    font-weight: bold;
+    color: #808080;
+    overflow: hidden;
+    font-size: 1em;
+
+}
+.kiteTextPicture {
+    width: 30%;
+    float: right;
+    
+    margin-left: 20px;
+    
+}
+
+.answers {
+  border-bottom: 1px solid #ddd;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 2rem;
+
+}
+
+
+/*Page with kontacts*/
+
+.table {
+    width: 200px;
+    overflow: hidden;
+    
+}
+
+.table th {
+    font-weight: normal;
+}
+
+.table td {
+    font-weight: bold;
+}
+
+.table a {
+    color: black;
+}
+
+.table a:hover {
+    text-decoration: underline;
+}
+
+.communication {
+    margin-right: 10px;
+}
+
+.messageForms {
+    width: 450px;
+}
+
+.name {
+    border: 1px solid blue;
+}
+
+
+
+/*MEDIA*/
+
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+@media (min-width: 320px) and (max-width: 480px) {
+
+#mnPic {
+    width: 20%;
+    margin-bottom: -20px;
+}
+
+.menu {
+    margin-top: -30px;
+    margin-bottom: 40px;
+}
+
+.menu-element1 {
+    font-size: .7em;
+    margin-right: 2px;
+    margin-left: 20px;
+}
+
+#homepic {
+	margin-bottom: 30px;
+}
+
+.text-element2 {
+	font-size: 0.7em;
+    margin-bottom: 20px;
+}
+
+.schoolText {
+	font-size: 1.5em;
+	margin-bottom: 50px;
+}
+
+.leader {
+	font-size: 0.7em;
+}
+
+.text-element {
+	font-size:1em;
+}
+
+
+
+.following-element {
+	font-size: 1em;
+}
+
+.following{
+	margin-top: 5px;
+}
+
+.men2 {
+	margin-top: 50px;
+}
+
+#nameOfLocation {
+	font-size: 1.3em;
+}
+
+.map {
+	height:200px;
+}
+
+.MainInfo {
+	font-size: 1.2em;
+}
+
+.locInfo {
+    font-size: 1em;
+
+    margin-left: 0;
+
+    text-align: center;
+}
+
+.locations {
+	font-size: 1.1em;
+	margin-top: -30px;
+}
+
+.infoText {
+    font-size: .6em;
+    width: 90%;
+}
+
+.kiteTextPicture {
+    width: 77%;
+    float: none;
+    
+}
+
+.kontakts {
+    width: 310px;
+}
+
+.locationInfo {
+    font-size: .6em;
+}
+
+.margin {
+    margin-bottom: 20px;
+}
+
+
+
+	}
+
+	/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+	
+.menu-element1 {
+    font-size: 1.2em;
+
+    margin-right: 2px;
+    margin-left: 20px;
+}
+
+.locInfo {
+    font-size: 1.1em;
+
+    margin-left: 0;
+
+    text-align: center;
+}
+
+#mnPic {
+    width: 20%;
+    margin-bottom: -20px;
+}
+
+
+.infoText {
+    font-size: .9em;
+    width: 90%;
+}
+
+.kiteTextPicture {
+    width: 86%;
+    float: none;
+
+
+}
+
+.kontakts {
+    width: 450px;
+}
+
+
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape)
+ {
+
+  .menu-element1 {
+    font-size: 1.3em;
+
+    margin-right: 2px;
+    margin-left: 20px;
+}
+
+.locInfo {
+    font-size: 1.1em;
+
+    margin-left: 0;
+
+    text-align: center;
+}
+
+
+
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+     .menu-element1 {
+    font-size: 1.3em;
+
+    margin-right: 2px;
+    margin-left: 30px;
+}
+
+
+
+  
+}
+
+.mainNavbar {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    width: 100%;
+    height: 60px;
+    background-color: #4682B4;
+    overflow: hidden;
+}
+
+.flex-element6 {
+    align-self: center;
+    flex-grow: 2;
+}
+
+.mainNavbar a {
+    position: relative;
+     color: #fff;
+     
+     font-size: 1em;
+     
+ }
+
+ .flex-element1, .flex-element2, .flex-element3, .flex-element4, .flex-element5 ,.flex-element6{
+    height: 100%;
+    width: 7%;
+ }
+.centering:before{
+ content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  text-align: center;
+}
+
+#mainLogo {
+    font-size: 1em;
+}
