@@ -5,7 +5,9 @@ body {
 .boldText {
     font-weight: bold;
 }
-
+.colorWhite{
+   color: white;
+}
 .colorOrange {
     color: orange;
 }
@@ -302,6 +304,16 @@ footer.page-footer {
 
 .row {
 	margin: auto;
+}
+
+.card-content a {
+    color: white;
+    text-decoration: underline ;
+}
+
+.card-content a:hover {
+    color: #DCDCDC;
+
 }
 /*Particular pages of schools*/
 
