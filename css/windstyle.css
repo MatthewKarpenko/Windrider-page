@@ -59,6 +59,15 @@ body {
     text-transform: uppercase;
 }
 
+#menuImage{
+    width: 69%;
+    padding-top: 31%;
+}
+
+.menuBlockSize {
+    width: 40px;
+}
+
 #kite {
 	color: orange;
 }
@@ -551,6 +560,10 @@ footer.page-footer {
     margin-bottom: 20px;
 }
 
+.linkToKite .linkToWake .linkToMainPage {
+    display: none;
+}
+
 
 
 	}
@@ -599,6 +612,9 @@ footer.page-footer {
     width: 450px;
 }
 
+.center {
+    left: 10%;
+}
 
 }
 
@@ -643,45 +659,35 @@ footer.page-footer {
 }
 
 
-
   
 }
 
-.mainNavbar {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: flex-end;
-    width: 100%;
-    height: 60px;
+
+#mobileMenu {
     background-color: #4682B4;
-    overflow: hidden;
+    width: 106px;
+    position: absolute;
+    right: 469px;
+    top:43px;
+    opacity: 0;
+    border: 1px solid white;
+    box-shadow: 0 0 16px rgba(0,0,0,0.5);
+    border-radius: 0 0 0 2px;
+    transition: 0.5s ease;
+    z-index: 2;
 }
 
-.flex-element6 {
-    align-self: center;
-    flex-grow: 2;
+.mobileMenuElement {
+    border-bottom: 0.5px solid white;
+    text-align: right;
+    line-height: 38px;
+    padding-right: 5px;
 }
 
-.mainNavbar a {
-    position: relative;
-     color: #fff;
-     
-     font-size: 1em;
-     
- }
-
- .flex-element1, .flex-element2, .flex-element3, .flex-element4, .flex-element5 ,.flex-element6{
-    height: 100%;
-    width: 7%;
- }
-.centering:before{
- content: '';
-  display: inline-block;
-  height: 100%;
-  vertical-align: middle;
-  text-align: center;
+.mobileMenuElement a{
+    color: white;
 }
 
-#mainLogo {
-    font-size: 1em;
+.mobileMenuElement:hover {
+    opacity: 0.8;
 }

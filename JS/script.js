@@ -33,39 +33,22 @@ function showAnswer(event) {
 
 
 /*Main menu*/
-let userWidth = document.documentElement.clientWidth;
-let linkToKite = document.getElementById("linkToKite");
-let linkToWake = document.getElementById("linkToWake");
-let linkToMainPage = document.getElementById("linkToMainPage");
-let mainLogo = document.getElementById("logo");
-let linkToSchool = document.getElementById("linkToSchool");
+setTimeout(function(){
 
-function hideElement(element1,element2,element3,element4){
-	if (userWidth < 568) {
-		element1.style.display = "none"
-	};
-	if (userWidth < 532){
-		element2.style.display = "none";
-		element3.style.display = "none";
-		element1.style.display = "none";
-		element4.classList.remove("hidden");
-		element4.classList.add("active");
+let menuImage = document.getElementById("menuImage");
+let menu = document.getElementById("mobileMenu");
+let menuElement = document.getElementsByClassName("mobileMenuElement");
+
+menuImage.addEventListener("click",moveMenu);
+	function moveMenu(event) {if (menu.classList.contains("openMenu")){
+		menu.style.right = "469px";
+		menu.style.opacity = "0";
+		menu.classList.remove("openMenu");
+	}else{
+		menu.classList.add("openMenu")
+		menu.style.right = "0px"
+		menu.style.opacity = "0.9"
+	} 
+
 	}
-};
-
-hideElement(linkToMainPage,linkToKite,linkToWake,linkToSchool);
-
-function showElement(element1,element2,element3){
-
-};
-
-showElement(linkToMainPage,linkToKite,linkToWake);	 	
-
-function moveLogo(logo){
-	if (userWidth < 1128){
-		logo.classList.remove("center");
-		logo.classList.add("left");
-		logo.style.marginLeft = "20px"
-	};
-};
-moveLogo(mainLogo);
+}, 500);

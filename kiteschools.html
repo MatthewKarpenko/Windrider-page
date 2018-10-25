@@ -1,43 +1,58 @@
 <!DOCTYPE html>
 <html>
- <head>
+  <head>
+    <title></title>
+    <meta charset="utf-8">
+    <link href='css/windstyle.css' rel='stylesheet' type='text/css'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-  	 <title></title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+    <link href='css/windstyle.css' rel='stylesheet' type='text/css'>
+  </head>
 
-   		<meta charset="utf-8">
+  <body>
 
-   			<link href='css/windstyle.css' rel='stylesheet' type='text/css'>
+    <ul id="dropdown1" class="dropdown-content">
+  <li><a href="kiteschools.html">Кайт</a></li>
+  <li><a href="#!">Вейк</a></li>
+  <li class="divider"></li>
+  
+</ul>
 
-   				<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-   					<!-- Compiled and minified CSS -->
-    					<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+    <nav class="sidenav-trigger">
+    <div class="nav-wrapper ">
+      <a href="#" class="brand-logo center waves-effect waves-light " id="logo">Windrider</a> 
+      <ul id="nav-mobile" class="right ">
+        <li><a href="#" class="menu-links hide-on-med-and-down" id="linkToMainPage">Главная</a></li>
+        <li class="menu-links hide-on-med-and-up menuBlockSize"><img src="Images/menu.png" id="menuImage" alt="menuImage"></li>
 
+         <li><a class="dropdown-trigger hide-on-large-only hide-on-small-only" href="#" data-target="dropdown1" id="linkToSchool">Школы<i class="material-icons right">arrow_drop_down</i></a></li>
 
+        <li><a href="#" class="menu-links hide-on-med-and-down" id="linkToKite">Кайт-школы</a></li>
 
-    						<!-- Compiled and minified JavaScript -->
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    							
+        <li><a href="#" class="menu-links hide-on-med-and-down"id ="linkToWake">Вейк-школы</a></li>
 
-   									<meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <li><a href="proriders.html" class="menu-links hide-on-small-only" id="linkToProriders">Прорайдеры</a></li>
 
-   									<link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
-
-                    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
- </head>
- 	<body>
-
- 	
-  <nav>
-    <div class="nav-wrapper">
-      <a href="#" class="brand-logo center">Windrider</a>
-      <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a href="windrider.html" class="menu-links">Главная</a></li>
-        <li><a href="kiteschools.html" class="menu-links">Кайт-школы</a></li>
-        <li><a href="#" class="menu-links">Вейк-школы</a></li>
-         <li><a href="#proriders.html class="menu-links">Прорайдеры</a></li>
       </ul>
     </div>
   </nav>
+
+  <ul id="mobileMenu" class="hide-on-med-and-up">
+    <li class="mobileMenuElement"><a href=#">Главная</a></li>
+    <li class="mobileMenuElement"><a href="#">Кайт-школа</a></li>
+    <li class="mobileMenuElement"><a href="#">Вейк-школа</a></li>
+    <li class="mobileMenuElement"><a href="#">Прорайдеры</a></li>
+    <li class="mobileMenuElement"><a href="#">Контакты</a></li>
+  </ul>
 
   <h1 class="locations">Кайт-школы <span class="colorOrange">windrider</span></h1>
   <div class="infoText">
@@ -232,9 +247,11 @@
           </div>
         </div>
       </footer>
-      
-   
-      
+       <script>
+        
+    $(".dropdown-trigger").dropdown();
+        
+      </script>
 
       <script src="JS/script.js"></script>
 
