@@ -1,6 +1,12 @@
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+:root {
+    --main-color: #4682B4;
+};
+
 body {
 	font-family 'Roboto',sans-serif;
+}
+.BWColor {
+    filter: grayscale(100%);
 }
 .boldText {
     font-weight: bold;
@@ -70,6 +76,8 @@ body {
     width: 40px;
 }
 
+
+
 #kite {
 	color: orange;
 }
@@ -105,21 +113,6 @@ a:hover {
 
     justify-content: center;
 }
-
-#game-container {
-    width: 100%;
-    height: 96px;
-}
-
-.gamePic {
-    width: 152px;
-    margin-left: 20px;
-    padding-top: 34px;
-    margin-bottom: 92px;
-
-}
-
-
 
 .schoolText {
     font-size: 25px;
@@ -209,45 +202,10 @@ a:hover {
 	color: #A9A9A9;
 }
 
-.socbot {
-    display: flex;
 
-    margin-top: 20px;
-    margin-bottom: 30px;
 
-    justify-content: center;
-}
 
-.link2:hover {
-	opacity: 0.5;
-}
 
-.link2  {
-	width: 30%;
-}
-
-.men2 {
-    font-size: 14px;
-
-    display: flex;
-
-    margin-top: 100px;
-    margin-bottom: 125px;
-
-    justify-content: center;
-}
-
-.men2 a {
-    margin: 10px;
-
-    text-decoration: none;
-
-    color: gray;
-}
-
-.men2 a:hover {
-	opacity: 0.6;
-}
 
 footer.page-footer {
 	background-color: #4682B4;
@@ -334,6 +292,8 @@ footer.page-footer {
     display: flex;
 
     justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
 }
 
 .map {
@@ -345,6 +305,8 @@ footer.page-footer {
     font-size: 1em;
     letter-spacing: 1px;
     color: #696969;
+    padding-left: 1.5rem;
+    border-left: 5px solid var(--main-color);
 }
 
 .kontakt-people {
@@ -373,12 +335,28 @@ footer.page-footer {
 }
 
 .kontakts {
+
     width: 500px;
     margin: auto;
 }
 
+.containerOfKontakts{
+    margin-left: 20px;
+}
 
+.link2ForSchools:hover {
+    opacity: 0.5;
+}
 
+.link2ForSchools  {
+   margin-top: 28px;
+    
+    width: 34%;;
+}
+
+.socbot-elementForSchools {
+    margin-left: 20px;
+}
 
 
 
@@ -386,8 +364,16 @@ footer.page-footer {
 
 /*page of proriders*/
 
-.headerProrider {
-	font-size: 2.5em;
+.proridersHeader {
+	 font-size: 200%;
+
+    padding-top: 30px;
+
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    color: #808080;
 }
 
 .proriders {
@@ -395,7 +381,58 @@ footer.page-footer {
 	margin-bottom: 100px;
 }
 
+#containerForProriderBlocks {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill,350px);
+  
+}
 
+.proriderBlock {
+    margin-bottom: 40px;
+}
+
+.proriderPhoto {
+    display: block;
+    margin: auto;
+    width: 75%;
+}
+
+.nameOfProrider {
+    text-align: center;
+    font-size: 1.5em;
+    color: #9e9e9e;
+}
+
+.linkToProriderPage {
+    text-align: center;
+    font-size: 1.2em;
+    margin-top: -10px;
+    
+}
+
+.linkToProriderPage a{
+   color: #616161 ; 
+}
+
+.linkToProriderPage a:hover{
+   color: #9e9e9e; 
+}
+
+.containerOfProridersLinks {
+    display: flex;
+    justify-content: center;
+}
+.proridersLinks {
+    width: 38%;
+    filter: grayscale(100%);
+    
+}
+
+.proridersLinks:hover {
+    filter: grayscale(0%);
+
+}
 
 /*kite-schools page*/
 .infoText {
@@ -462,7 +499,23 @@ footer.page-footer {
 }
 
 
+/*Container for socialnetworks*/
+    .socbot {
+    display: flex;
 
+    margin-top: 20px;
+    margin-bottom: 30px;
+
+    justify-content: center;
+}
+
+.link2:hover {
+    opacity: 0.5;
+}
+
+.link2  {
+    width: 30%;
+}
 /*MEDIA*/
 
 
@@ -545,8 +598,9 @@ footer.page-footer {
 }
 
 .locations {
-	font-size: 1.1em;
-	margin-top: -30px;
+	    font-size: 1em;
+    margin-top: 1px;
+    line-height: 20px;
 }
 
 .infoText {
@@ -561,12 +615,18 @@ footer.page-footer {
 }
 
 .kontakts {
-    width: 310px;
+    width: 100%;
 }
 
 .locationInfo {
+    background-image: url(../Images/xparkText.jpg) ;
+    background-repeat: no-repeat;
+    background-size: 30%;
+    background-position: center;
+    background-opacity: 0.5;
     font-size: .6em;
 }
+
 
 .margin {
     margin-bottom: 20px;
@@ -576,7 +636,31 @@ footer.page-footer {
     display: none;
 }
 
+.link2ForSchools {
+    width: 20px;
+    height: 20px;
+    margin-top: 20px;
+}
 
+.adresInfo {
+    display:none;
+}
+
+#X-park {
+    width: 28%;
+}
+
+.proridersLinks {
+    width: 30%;
+}
+
+.proridersHeader {
+    font-size: 160%;
+}
+
+#containerForProriderBlocks {
+    grid-template-columns: repeat(auto-fill,300px);  
+}
 
 	}
 
@@ -677,7 +761,7 @@ footer.page-footer {
 
 #mobileMenu {
     background-color: #4682B4;
-    width: 106px;
+    width: 100%;
     position: absolute;
     right: 469px;
     top:43px;
@@ -691,7 +775,7 @@ footer.page-footer {
 
 .mobileMenuElement {
     border-bottom: 0.5px solid white;
-    text-align: right;
+    text-align: left;
     line-height: 38px;
     padding-right: 5px;
 }
@@ -703,3 +787,4 @@ footer.page-footer {
 .mobileMenuElement:hover {
     opacity: 0.8;
 }
+

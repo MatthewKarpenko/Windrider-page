@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <meta charset="utf-8">
+    <link href='css/windstyle.css' rel='stylesheet' type='text/css'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/proriderCSS.css" type="text/css">
+    <link href='css/windstyle.css' rel='stylesheet' type='text/css'>
+  </head>
+
+  <body>
+
+    <ul id="dropdown1" class="dropdown-content">
+  <li><a href="kiteschools.html">Кайт</a></li>
+  <li><a href="#!">Вейк</a></li>
+  <li class="divider"></li>
+  
+</ul>
+
+    <nav class="sidenav-trigger">
+    <div class="nav-wrapper ">
+      <a href="#" class="brand-logo center waves-effect waves-light " id="logo">Windrider</a> 
+      <ul id="nav-mobile" class="right ">
+        <li><a href="#" class="menu-links hide-on-med-and-down" id="linkToMainPage">Главная</a></li>
+        <li class="menu-links hide-on-med-and-up menuBlockSize"><img src="Images/menu.png" id="menuImage" alt="menuImage"></li>
+
+         <li><a class="dropdown-trigger hide-on-large-only hide-on-small-only" href="#" data-target="dropdown1" id="linkToSchool">Школы<i class="material-icons right">arrow_drop_down</i></a></li>
+
+        <li><a href="#" class="menu-links hide-on-med-and-down" id="linkToKite">Кайт-школы</a></li>
+
+        <li><a href="#" class="menu-links hide-on-med-and-down"id ="linkToWake">Вейк-школы</a></li>
+
+         <li><a href="proriders.html" class="menu-links hide-on-small-only" id="linkToProriders">Прорайдеры</a></li>
+
+      </ul>
+    </div>
+  </nav>
+
+  <ul id="mobileMenu" class="hide-on-med-and-up">
+    <li class="mobileMenuElement"><a href=#">Главная</a></li>
+    <li class="mobileMenuElement"><a href="#">Кайт-школа</a></li>
+    <li class="mobileMenuElement"><a href="#">Вейк-школа</a></li>
+    <li class="mobileMenuElement"><a href="#">Прорайдеры</a></li>
+    <li class="mobileMenuElement"><a href="#">Контакты</a></li>
+  </ul>
+
+
+  <div class="proriderMainInfo container">
+
+      <div class="containerOfPhoto">
+      <img src="Images/Matthew.jpg"  class="mainPhotoOfProrider" alt="mainPhotoOfProrider">
+      </div>
+
+      <div class="containerOfInfo">
+        <p class="proriderName">Карпенко Матвей</p>
+
+        <p class="proriderCity">Город <br/><a href="#">Киев</a><i class="tiny  material-icons">location_on</i></p>
+
+        <p class="proriderPhone">Телефон<br/> <a href="tel:+380997726120">+380997726120</a><i class="tiny  material-icons">smartphone</i></p>
+
+        <p class="proriderMail">Почта<br/><a href="#"> mtw.karp@gmail.com</a></p>
+
+        
+          
+          <a href="#"><img src="SocialIcons/FacebookIcon.png" class="proridersSocialLinksB"></a>
+          <a href="#"><img src="SocialIcons/InstagramIcon.png" class="proridersSocialLinksB"></a>
+          <a href="#"><img src="SocialIcons/MailIcon.png"  class="proridersSocialLinksB">
+          </a>
+
+        </div>
+
+        <div id="smallDevInfo">
+          <p class="proriderName">Карпенко Матвей</p>
+          <div class="linksDiv">
+          <a href="#"><img src="SocialIcons/FacebookIcon.png" class="proridersSocialLinks"></a>
+          <a href="#"><img src="SocialIcons/InstagramIcon.png" class="proridersSocialLinks"></a>
+          <a href="#"><img src="SocialIcons/MailIcon.png"  class="proridersSocialLinks">
+          </a>
+        </div>
+          <p id="hiddenInfo">Общая информация <br/><i id ="detailsOfProrider" class="tiny  material-icons center-align ">details</i></p>
+            </div>
+  </div>
+
+            <div id="hiddenInfoForSmallDev" class="hidden openMenu container" >
+              <div id="infoHeader">Информация</div>
+
+        <p class="proriderCity">ГОРОД<br/><a href="#">Киев</a><i class="tiny  material-icons">location_on</i>
+        </p>
+        <p class="proriderPhone">ТЕЛЕФОН<br/><a href="tel:+380997726120">+380997726120</a><i class="tiny  material-icons">smartphone</i>
+        </p>
+  
+        </p>
+        <p class="proriderMail">ПОЧТА<br/><a href="#"> mtw.karp@gmail.com</a></p>
+
+          
+
+        <div id="footerInfo"></div>
+
+
+
+      </div>
+
+      <div class="post container">
+        <div class="postField">
+          
+          <div class="postElement">
+          <img src="Images/Matthew.jpg" alt="postPhoto" id="postPhoto">
+        </div>
+        <div class="postElement">
+          <input type="text" id="postText" class="browser-default" value="Что у вас нового ?" >
+        </div>
+            <div class="pin">
+              <i class="small material-icons">attachment</i>
+              <i class="small material-icons">collections</i>
+              <i class="small material-icons" id="emoji">insert_emoticon</i>
+
+
+            </div>
+        </div>
+        
+      </div>
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <footer class="page-footer">
+        
+        <div class="container">
+          <div class="row">
+            <div class="col l6 s12">
+              <h5 class="white-text">Windrider school</h5>
+              <p class="grey-text text-lighten-4"></p>
+            </div>
+
+            <div class="col l4 offset-l2 s12">
+              <h5 class="white-text">Ссылки</h5>
+              <ul>
+                <li><a class="grey-text text-lighten-3" href="#">Главная</a></li>
+                <li><a class="grey-text text-lighten-3" href="#">Кайт-школы</a></li>
+                <li><a class="grey-text text-lighten-3" href="#">Вейк-школы</a></li>
+                <li><a class="grey-text text-lighten-3" href="#">Контакты</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+        <div class="footer-copyright">
+          <div class="container">
+            © 2018 Kiriak&Karp production
+            <a class="grey-text text-lighten-4 right" href="#">Больше ссылок</a>
+          </div>
+        </div>
+      </footer>
+      <script>
+        
+    $(".dropdown-trigger").dropdown();
+        
+      </script>
+      <script src="JS/script.js"></script>
+
+    </body>
+  </html>

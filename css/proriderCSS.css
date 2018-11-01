@@ -1,0 +1,319 @@
+/*Particular pages of proriders*/
+:root {
+	--gray-color:  #9e9e9e;
+	--orange-color: #ffa726;
+}
+
+.rotateItem{
+	transform: rotate(180deg)
+}
+body {
+	font-family 'Roboto',sans-serif;
+}
+.proriderMainInfo {
+    display: grid;
+    grid-template-columns: 400px 6fr;
+    grid-template-rows: 400px ;
+    grid-gap: 30px;
+    margin-top: 70px;
+    margin-bottom: 25px;
+}
+
+.mainPhotoOfProrider {
+    width: 90%;
+    display: block;
+    margin: auto;
+}
+
+.containerOfInfo {
+	background-image: url(../Images/wave.jpg);
+	background-size: 400px 360px;
+	background-repeat: no-repeat; 
+	padding-left: 12px;
+}
+
+.containerOfInfo a {
+	text-align: center;
+}
+.proriderName {
+	color: #616161;
+	font-size: 2em;
+	margin: 0;
+}
+
+.proriderCity {
+	font-size: 1.4em;
+	color: var(--orange-color);
+}
+
+.proriderPhone {
+	font-size: 1.4em;
+	color: var(--orange-color);
+}
+
+
+.proriderMail {
+		font-size: 1.4em;
+	color: var(--orange-color);	
+}
+
+.proridersSocialLinks {
+	width: 30px;
+	margin-right: 20px;
+	
+}
+
+.proridersSocialLinksB {
+	width: 30px;
+	margin-right: 20px;
+
+	
+}
+
+#hiddenInfo {
+	width: 100%;
+	text-align: center;
+	font-size: 1.5em;
+	color: var(--orange-color);
+	line-height: 1;
+	cursor: pointer;
+}
+
+.linksDiv {
+	display: flex;
+	justify-content: center;
+	margin-top: 5px;
+}
+
+
+#hiddenInfoForSmallDev {
+	opacity: 1;
+	transition: 0.5s ease;
+}
+
+#hiddenInfoForSmallDev p ,a {
+	text-align: center;
+}
+
+#hiddenInfoForSmallDev {
+	background-image: url(../Images/wave.jpg);
+	background-size: contain;
+	background-repeat: repeat; 
+}
+
+#infoHeader {
+	background-color: var(--main-color);
+	color: white;
+	height: 34px;
+	padding-left: 20px;
+	font-size: 1.5em;
+}
+
+#footerInfo {
+	background-color: var(--main-color);
+	height: 20px;
+}
+
+/*Poooooost*/
+
+.post {
+	background-color: #f5f5f5;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	height: 120px;
+	width: 650px;
+	border-radius: 13px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+#postPhoto {
+	border-radius: 100px;
+	width: 70px;
+    margin-left: 20px;
+}
+
+.postText {
+	width: 50px;
+}
+
+.postField {
+	display: flex;
+	flex-direction: row;
+}
+
+.postElement input {
+	background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #9e9e9e;
+    border-radius: 0;
+    outline: none;
+    height: 3rem;
+    font-size: 16px;
+    margin-top: 13px;
+    margin-left: 27px;
+    width: 400px;
+    color: #424242;
+}
+
+.pin {
+	display: flex;
+	flex-direction: column;
+	margin-left: 10px;
+}
+
+.pin i:hover {
+	color: var(--gray-color);
+	cursor: pointer;
+}
+
+#emoji {
+	color: #fbc02d;
+}
+
+
+
+
+@media (min-width: 320px) and (max-width: 480px) {
+.containerOfInfo {
+		display: none;
+}
+
+.proriderName {
+	text-align: center;
+	font-size: 1.5em;
+}
+
+#hiddenInfo {
+	font-size: 1.3em;
+}
+
+.proriderMainInfo {
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-rows: 1fr	 100px;
+    grid-gap: 10px;
+}
+
+.proriderCity {
+	font-size: 1em;
+}
+
+.proriderPhone {
+	font-size: 1em;
+}
+
+.proriderMail {
+		font-size: 1em;	
+}
+
+.postElement input{
+	width: 150px;
+}
+
+.post {
+	width: 310px;
+}
+
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+.proriderMainInfo {
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-rows: 1fr	 150px;
+    grid-gap: 10px;
+}
+
+.mainPhotoOfProrider {	
+	width: 50%;
+}
+
+.proriderName {
+	font-size: 2.2em;
+	text-align: center;
+
+}
+
+.containerOfInfo {
+	display: none;
+}
+
+.postElement input{
+	width: 300px;
+}
+
+.post {
+	width: 470px;
+}
+
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape)
+ {
+	
+.proriderCity, .proriderPhone, .proriderMail {
+	font-size: 1.5em;
+
+}
+#smallDevInfo {
+	display: none;
+}
+
+#hiddenInfoForSmallDev {
+	display: none;
+}
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+.proriderCity, .proriderPhone, .proriderMail {
+	font-size: 1.5em;
+}
+
+#smallDevInfo {
+	display: none;
+}
+
+#hiddenInfoForSmallDev {
+	display: none;
+}
+
+  
+}
+
+@media (min-width: 768px) and (max-width: 790px) {
+
+	.proriderName {
+		font-size: 1.7em;
+	}
+
+}
+
+@media (min-width: 768px) {
+
+	#smallDevInfo {
+	display: none;
+}
+
+	#hiddenInfoForSmallDev {
+	display: none;
+}
+
+}
+
+@media (max-width: 768px) {
+	
+	.containerOfInfo {
+	display: none;
+	}
+
+}
